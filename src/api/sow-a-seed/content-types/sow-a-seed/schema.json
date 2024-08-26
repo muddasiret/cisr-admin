@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sow_a_seeds",
+  "info": {
+    "singularName": "sow-a-seed",
+    "pluralName": "sow-a-seeds",
+    "displayName": "Sow a seed"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "main_youtube": {
+      "type": "string"
+    },
+    "weekly_timetable": {
+      "displayName": "weekly timetable",
+      "type": "component",
+      "repeatable": true,
+      "component": "weekly.weekly-timetable"
+    },
+    "end_youtube": {
+      "type": "string"
+    }
+  }
+}

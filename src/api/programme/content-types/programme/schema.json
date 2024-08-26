@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programmes",
+  "info": {
+    "singularName": "programme",
+    "pluralName": "programmes",
+    "displayName": "programme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "syllabus": {
+      "displayName": "syllabus",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.syllabus"
+    },
+    "title": {
+      "type": "string"
+    },
+    "youtube_link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "programme_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::programme-type.programme-type"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "sub_description": {
+      "type": "richtext"
+    },
+    "how_to_apply": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.syllabus"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "youtube_link": {
+      "type": "string"
+    },
+    "address": {
+      "type": "richtext"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "about_accordion": {
+      "displayName": "accordion",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-accordion.accordion"
+    }
+  }
+}

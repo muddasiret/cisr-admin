@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programme_types",
+  "info": {
+    "singularName": "programme-type",
+    "pluralName": "programme-types",
+    "displayName": "programme-type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

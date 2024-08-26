@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_rich_texts",
+  "info": {
+    "singularName": "test-rich-text",
+    "pluralName": "test-rich-texts",
+    "displayName": "test rich text"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test": {
+      "type": "richtext"
+    }
+  }
+}

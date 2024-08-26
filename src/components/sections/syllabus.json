@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_syllabi",
+  "info": {
+    "displayName": "syllabus",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

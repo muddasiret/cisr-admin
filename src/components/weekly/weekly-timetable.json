@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_weekly_weekly_timetables",
+  "info": {
+    "displayName": "weekly timetable",
+    "icon": "calendar-check"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "speaker": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
