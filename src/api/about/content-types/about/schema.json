@@ -24,14 +24,18 @@
     "email": {
       "type": "email"
     },
-    "description": {
-      "type": "richtext"
-    },
     "about_accordion": {
       "displayName": "accordion",
       "type": "component",
       "repeatable": true,
       "component": "about-accordion.accordion"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

@@ -36,9 +36,6 @@
       "type": "boolean",
       "default": false
     },
-    "content": {
-      "type": "richtext"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -60,6 +57,13 @@
     },
     "category": {
       "type": "string"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

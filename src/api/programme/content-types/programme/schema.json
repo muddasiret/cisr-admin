@@ -24,9 +24,6 @@
     "youtube_link": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "programme_type": {
       "type": "relation",
       "relation": "oneToOne",
@@ -36,23 +33,35 @@
       "type": "uid",
       "targetField": "title"
     },
-    "sub_description": {
-      "type": "richtext"
-    },
     "how_to_apply": {
       "type": "component",
       "repeatable": true,
       "component": "sections.syllabus"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "sub_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

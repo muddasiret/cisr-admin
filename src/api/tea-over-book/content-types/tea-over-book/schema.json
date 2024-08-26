@@ -35,9 +35,6 @@
     "author": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "slug": {
       "type": "uid",
       "targetField": "book_name"
@@ -52,6 +49,13 @@
         "videos",
         "audios"
       ]
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

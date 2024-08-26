@@ -26,15 +26,6 @@
         "audios"
       ]
     },
-    "introduction": {
-      "type": "richtext"
-    },
-    "events": {
-      "type": "richtext"
-    },
-    "publications": {
-      "type": "richtext"
-    },
     "team": {
       "displayName": "team",
       "type": "component",
@@ -47,6 +38,27 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "introduction": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "events": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "publications": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
